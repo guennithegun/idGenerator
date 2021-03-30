@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UUID Generator</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>ID Generator</h1>
+    </header>
+
+    <section class="dataEntry">
+        <p>please select your favorite id style and how many IDs you need</p>
+        <div>
+            <div>
+                <input type="radio" name="id" id="uuid" value="nanoid">
+                <label for="uuid">long id (uuid)</label>
+                <input type="radio" name="id" id="nanoid" value="nanoid">
+                <label for="nanoid">short id</label>
+            </div>
+            <div class="numberInput">
+                <input type="number" name="number" id="number" placeholder="number of id's you want">
+            </div>
+            <div class="buttons">
+                <button id="create">
+                    create!
+                </button>
+                <button id="clear" disabled>
+                    clear list
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <section class="result">
+        <ul id="resultList">
+
+        </ul>
+    </section>
+
+    <script src="app.js"></script>
+
+</body>
+</html>
